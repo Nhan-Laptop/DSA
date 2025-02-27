@@ -1,0 +1,92 @@
+import numpy as np
+import time
+
+with open("test1.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")
+
+with open("test2.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")
+
+with open("test3.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")
+
+with open("test4.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")
+
+with open("test5.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")
+
+with open("test6.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")
+
+with open("test7.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")
+
+with open("test8.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")
+
+with open("test9.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")
+
+with open("test10.inp", "r") as f:
+    data = f.read()  # Read the entire file
+
+data = np.array(data.split(), dtype=int)
+start = time.time() 
+data = np.sort(data)
+end = time.time()  
+print(f"{end - start:.6f}")

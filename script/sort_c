@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+#define ll long long
+#define BUFF() ios::sync_with_stdio(0);cin.tie();cout.tie();
+#define forr(i,a,b) for(int _a=(a),_b=(b),i=_a;i<=_b;i++)
+#define fi first
+#define se second
+#define get(x,i) ((x>>(i-1))&1)
+#define endl '\n'
+#define left __left
+#define right __right
+#define Task(name) \
+    freopen(name".inp","r",stdin);\
+//    freopen(name".out","w",stdout);
+#define mp make_pair
+using namespace std;
+const int maxn=1e6+1;
+ll a[maxn+7];
+int main(){
+	freopen("a.inp","r",stdin);
+	int n=1e6;
+	forr(i,1,n){
+		cin>>a[i];
+	}
+	clock_t start = clock();
+    sort(a+1,a+1+n);
+	clock_t end   = clock();
+    double time_spent = (double)(end - start) / CLOCKS_PER_SEC;
+    cout<<time_spent;
+
+}

@@ -1,0 +1,71 @@
+#include<bits/stdc++.h>
+#define ll long long
+#define int long long
+#define BUFF() ios::sync_with_stdio(0);cin.tie();cout.tie();
+#define forr(i,a,b) for(int _a=(a),_b=(b),i=_a;i<=_b;i++)
+#define fi first
+#define se second
+#define get(x,i) ((x>>(i-1))&1)
+#define endl '\n'
+#define left __left
+#define right __right
+#define Task(name) \
+    freopen(name".inp","r",stdin);\
+//    freopen(name".out","w",stdout);
+#define mp make_pair
+#include <time.h>
+
+using namespace std;
+const int maxn=1e6+1;
+
+
+void quickSort(ll a[], ll l, ll r){
+	int p = a[(l+r)/2];
+	int i = l, j = r;
+	while (i < j){
+		while (a[i] < p){
+			i++;
+		}
+		while (a[j] > p){
+			j--;
+		}
+		if (i <= j){
+			int temp = a[i];
+			a[i] = a[j];
+			a[j] = temp;
+			i++;
+			j--;
+		}
+	}
+	if (i < r){
+		quickSort(a, i, r);
+	}
+	if (l < j){
+		quickSort(a, l, j);
+	}
+}
+ll a[maxn+7] ,b[maxn+7];
+ll n;
+void solve(){
+	n = 1e6;
+	forr(i,1,n){
+		cin>>a[i];
+		b[i]=a[i];
+	}
+
+	clock_t start = clock();
+	quickSort(a,1,n);
+	clock_t end   = clock();
+    double time_spent = (double)(end - start) / CLOCKS_PER_SEC;
+	cout<<time_spent;
+
+	
+}
+
+
+signed main(){
+	BUFF();
+	freopen("test1.inp","r",stdin);
+//	freopen("b.out","w",stdout);
+	solve();
+}
